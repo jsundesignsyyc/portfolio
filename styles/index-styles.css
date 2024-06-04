@@ -1,0 +1,26 @@
+header {
+    #header-content-container {
+        /* sanity check */
+        /* border: red 1pt solid; */
+
+        display: flex;
+        flex-flow: nowrap row;
+
+        svg{
+            /* border: lime 1pt solid; */
+            height: 2rem;
+        }
+
+        .flex-space {
+            /* border: purple 1pt solid; */
+            flex: 1; 
+        }
+        h2 {
+            /* border: aqua 1pt solid; */
+            width: fit-content;
+            white-space: nowrap;
+        }
+
+        
+    }
+}
