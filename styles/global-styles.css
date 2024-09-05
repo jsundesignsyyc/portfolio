@@ -1,0 +1,113 @@
+body {
+    background-color: #1b1b22;
+    font-family: "Urbanist", sans-serif;
+    font-size: inherit;
+    font-weight: 400;
+    color: white;
+}
+
+header {
+    position: sticky;
+    margin: 1rem 1rem 0rem 1rem;
+    padding: 1rem;
+    border: #ffffff43 1pt solid;
+    border-radius: 1rem;
+    background-color: rgba(245, 245, 245, 0.13);
+    box-shadow: 0rem 0.5rem 1rem #00000054,
+                inset 0rem 0.05rem 0.05rem #ffffff30;
+    text-shadow: 0rem 0.1rem 0.5rem #000000f8;
+}
+
+.container {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+button {
+    border: 1pt solid #ffffff43;
+    border-radius: 0.5rem;
+    background-color: #ffffff57;
+    box-shadow: 0rem 0.5rem 1rem #00000054,
+                inset 0rem 0.05rem 0.05rem #ffffff30;
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.glass {
+    border: #ffffff43 1pt solid;
+    border-radius: 1rem;
+    background-color: rgba(245, 245, 245, 0.13);
+    box-shadow: 0rem 0.5rem 1rem #00000054,
+                inset 0rem 0.05rem 0.05rem #ffffff30;
+    text-shadow: 0rem 0.1rem 0.5rem #000000f8;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+
+
+.bold {
+    font-size: inherit;
+    font-weight: 600;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+button{
+    cursor:pointer;
+  }
+  
+  button:hover{
+    background-color:#ddd;
+  }
+  
+.dropdown-options {
+display: none;
+position: absolute;
+overflow: auto;
+background-color:#fff;
+}
+
+.dropdown:hover .dropdown-options {
+display: block;
+}
+
+.dropdown-options a {
+display: block;
+color: #000000;
+padding: 5px;
+text-decoration: none;
+padding:20px 40px;
+}
+
+.dropdown-options a:hover {
+color: #0a0a23;
+background-color: #ddd;
+border-radius:5px;
+}
