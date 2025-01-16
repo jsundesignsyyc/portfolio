@@ -1,5 +1,9 @@
 /* global style sheet, used by multiple pages */
 
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 /* animations, imports, and utilities */
 @keyframes buttonAnimation {
 	from {text-shadow: inherit;
@@ -8,11 +12,12 @@
 		translate: 0em -1pt;}
 }
 
+
 /* body styles */
 body {
 	background-color: #1e242e;
 	color: #AFC1D6;
-	font-family: century gothic;
+	font-family: "outfit", sans-serif;
 }
 
 body a {
@@ -43,6 +48,7 @@ body ul{
 	font-size: 15pt;
 	position: fixed;
 	margin: auto;
+	top: 1rem;
 	left: 0px;
 	right: 0px;
 /* neumorphic fx */
@@ -157,3 +163,4 @@ footer p {
     margin: 0pt;
     padding: 0pt;
 }
+
