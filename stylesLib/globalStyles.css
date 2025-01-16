@@ -1,0 +1,218 @@
+/* global style sheet, used by multiple pages */
+
+/* animations, imports, and utilities */
+@keyframes buttonAnimation {
+	from {text-shadow: inherit;
+		translate: 0em, 0em;}
+	to {text-shadow: rgb(89, 200, 255) 1px 0 10px;
+		translate: 0em -1pt;}
+}
+
+/* body styles */
+body {
+	background-color: #1e242e;
+	color: #AFC1D6;
+	font-family: century gothic;
+}
+
+body a {
+	color: #AFC1D6;
+}
+body ul{
+	list-style: none;
+}
+
+/* head space */
+
+.topSpace { 
+	/* height: 50pt;  */
+	height: 46pt;
+} 
+
+/* floating top bar */
+
+.topBar {
+	border-top: #FFFFFF7a solid 1px;
+	border-left: #FFFFFF3a solid 1px;
+	border-right: #FFFFFF3a solid 1px;
+	border-bottom: #FFFFFF3a solid 1px;
+	display: block;
+	height: fit-content;
+	width: 84vw;
+	min-width: 16rem;
+	font-size: 15pt;
+	position: fixed;
+	margin: auto;
+	left: 0px;
+	right: 0px;
+/* neumorphic fx */
+	box-shadow:  0px 8px 22px #00000060,
+		   inset 0px -8px 22px #2b37459f;
+	border-radius: 10pt;
+	background-color: rgba(28, 31, 43, 0.5);
+	backdrop-filter: blur(20px);
+	text-shadow: 5px 5px 10px #000000F0;
+	z-index: 10;
+}
+
+.topBar ul {
+	/* border: yellowgreen 2px solid; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 5pt;
+}
+
+.topBar li {
+	/* border: cyan 1px solid; */
+	flex:auto;
+	text-align: center;
+}
+.topBar a:hover{
+	animation-name: buttonAnimation;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
+}
+.topBar a {
+	/* border: cyan 1px solid; */
+	text-decoration: none;
+	padding: none;
+	margin: none;
+	font-size:13pt;
+}
+.topBarLogo {
+	/* border: red 1px solid; */
+	padding-top: 4px;
+	flex: 1;
+}
+#headLogo {
+	/* height: 25pt; */
+	height: 20pt;
+	padding: none;
+	margin: none;
+	margin-top: 1%;
+}
+
+/* links and socials bar styles; defaults and for desktop */
+.links img {
+	height: 20pt;
+}
+
+.links {
+	border-top: #FFFFFF7a solid 1px;
+	border-left: #FFFFFF3a solid 1px;
+	border-right: #FFFFFF3a hidden 1px;
+	border-bottom: #FFFFFF3a solid 1px;
+	border-radius: 10pt;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	display: block;
+	position: fixed;
+	padding: 0px;
+	position: fixed;
+	margin: auto;
+	right: 0;
+	top: 20vh;
+	width: fit-content;
+	background-color: rgba(49, 59, 68, 0.7);
+	/* background-color: rgba(255, 255, 255, 0.7); */
+	box-shadow:  0px 8px 22px #00000060,
+		   inset 0px -8px 22px #2b37459f;
+	backdrop-filter: blur(20);
+}
+.links ul {
+	/* border: red 1pt solid; */
+	display: flex;
+	flex-direction: column;
+	padding: 0px; 
+	margin: 0px;
+
+}
+.links li {
+	/* border: rgb(255, 0, 0) 1px solid; */
+	border-radius: 10pt;
+	margin: 0px;
+	padding: 5pt;
+}
+.links li:hover {
+	animation-name: buttonAnimation;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
+}
+
+/* @media screen and (max-width: 850px) and (orientation: portrait) {
+
+} */
+
+/* style for navigation list, per page, floating */
+#navList {
+    border-top: #FFFFFF7a solid 1px;
+	border-left: #FFFFFF3a solid 1px;
+	border-right: #FFFFFF3a hidden 1px;
+	border-bottom: #FFFFFF3a solid 1px;
+    border-radius: 10pt;
+    border-top-left-radius: 0pt;
+    border-bottom-left-radius: 0pt;
+    width: fit-content;
+    position: fixed;
+    height: fit-content;
+    left: 0;
+    top: 60pt;
+    margin: auto;
+    padding: 0px;
+	background-color: rgba(28, 31, 43, 0.5); 
+    box-shadow:  0px 8px 22px #00000060,
+		   inset 0px -8px 22px #2b37459f;
+    text-shadow: 5px 5px 10px #000000A0;
+    backdrop-filter: blur(20pt);
+}
+
+#navList ul {
+    /* border: purple 1px solid; */
+    margin: auto;
+    padding: 0pt;
+    display: flex;
+    flex-direction: column;
+}
+
+#navList li {
+    /* border: lime 1px solid; */
+    margin: 0pt;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    justify-content: cernter;
+}
+#navList a {
+    /* border: red 1px solid; */
+    /* margin: 0pt; */
+    text-decoration: none;
+}
+#navList a:hover, button {
+	animation-name: buttonAnimation;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
+}
+
+#mainContent {
+    margin: 0pt 8vw;
+}
+
+footer {
+	/* border: red 1px solid; */
+    font-size: 10pt;
+    font-style: italic;
+    margin-top: 50pt;
+    padding-top: 20pt;
+	padding-bottom: 20pt;
+	background-color: #000000;
+	width: 100%;
+}
+footer p {
+    text-align: center;
+    margin: 0pt;
+    padding: 0pt;
+}

@@ -1,0 +1,50 @@
+/* style sheet for homepage */
+
+
+/* style for main content */
+
+#mainContent {
+    margin: 0pt 8vw;
+}
+
+#recents {
+    height: fit-content;
+}
+
+#recents ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#recents img {
+    height: 100pt;
+}
+
+#mainContent table {
+    border-top: #FFFFFF2a 1px solid;
+    border-left: #FFFFFF2a 1px solid;
+    border-right: #0000002a 1px solid;
+    border-bottom: #0000002a 1px solid;
+    border-radius: 15pt;
+    border-spacing: 5pt;
+    box-shadow:  2px 2px 5px #000000aa,
+                -2px -2px 5px #ffffff2a;
+    text-align: center;
+    margin: auto;
+
+}
+#mainContent tr, td, th {
+    padding: 20pt;
+}
+
+#mainContent th {
+    text-shadow:  2px 2px 10px #000000,
+    -2px -2px 10px #ffffff2a;
+}
+#mainContent td{
+    /* border: lightslategray 1px solid; */
+    border-radius: 10pt;
+    box-shadow:  2px 2px 10px #000000aa,
+                -2px -2px 10px #ffffff2a;
+}
+

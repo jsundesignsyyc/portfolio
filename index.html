@@ -1,81 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="./assets/icons/#logo_black_solid.ico?">
-    <!-- styles -->
-    <link rel="stylesheet" type="text/css" href="./styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="./styles/global-styles.css">
-    <link rel="stylesheet" type="text/css" href="./styles/index-styles.css">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- title -->
-    <title>saldandpaper Portfolio</title>
-</head>
-<body>
-    <header>
-        <div id="header-content-container">
-            <svg id="svg-logo" class="text-shadow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 1454.55">
-                <defs>
-                    <style>
-                    .cls-1 {
-                        fill: #fff;
-                        stroke-width: 0px;
-                    }
-                    </style>
-                </defs>
-                <g id="logo">
-                    <polygon class="cls-1" points="3000 0 2636.36 363.64 2636.36 1090.91 1909.09 1090.91 2272.73 727.27 2272.73 363.64 1909.09 363.64 1909.09 1090.91 1545.45 1454.55 1545.45 0 3000 0"/>
-                    <polygon class="cls-1" points="1454.55 0 1454.55 1454.55 0 1454.55 363.64 1090.91 363.64 363.64 1090.91 363.64 727.27 727.27 727.27 1090.91 1090.91 1090.91 1090.91 363.64 1454.55 0"/>
-                </g>
-            </svg>
-            <div class="flex-space"></div>
-            <div class="dropdown">
-                <button><h3>design portfolio</h3></button>
-                <div class="dropdown-options">
-                  <a href="#">Dashboard</a>
-                  <a href="#">Setting</a>
-                  <a href="#">Logout</a>
-                </div>
-              </div>
-              
-            
-        </div>
-    </header>
 
-    <section class="hero glass container">
-        ahhhh this is a test
-        <p>testing</p>
-        <p>more testings ahh</p>
-    </section>
-    <section class="hero glass container">
-        ahhhh this is a test
-        <p>testing</p>
-        <p>more testings ahh</p>
-    </section>
-    <section class="hero glass container">
-        ahhhh this is a test
-        <p>testing</p>
-        <p>more testings ahh</p>
-    </section>
-    <section class="hero glass container">
-        ahhhh this is a test
-        <p>testing</p>
-        <p>more testings ahh</p>
-    </section>
-    <section class="hero glass container">
-        ahhhh this is a test
-        <p>testing</p>
-        <p>more testings ahh</p>
-    </section>
-    <section class="hero glass container">
-        ahhhh this is a test
-        <p>testing</p>
-        <p>more testings ahh</p>
-    </section>
+    <link href="./stylesLib/globalStyles.css" rel="stylesheet">
+    <link href="./stylesLib/indexStyles.css" rel="stylesheet">
+    <script defer src="./scriptLib/globalScript.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="./imgLib/logo_black_solid.ico" />
+</head>
+
+<body>
+    <!-- global elements: floating(topBar, links/socials) -->
+    <label>
+        <div class="topBar">
+            <ul>
+                <li class="topBarSpace"></li>
+                <li><a href="./aural.html">AUDIO</a></li>
+                <li class="topBarLogo"><a href="./index.html"><img id="headLogo"
+                            src="./imgLib/logo_white_solid.png"></a></li>
+                <li><a href="./visual.html">VISUAL</a></li>
+                <li class="topBarSpace"></li>
+            </ul>
+        </div>
+        <!-- <input type="checkBox" id="mainBorgir" class="borgirShow" for > -->
+        <nav class="links">
+            <ul>
+                <li><a target="_blank"
+                        href="https://www.instagram.com/todwstam_create/?utm_source=ig_web_button_share_sheet&igshid=YzAwZjE1ZTI0Zg=="><img
+                            src="./imgLib/icons/Instagram_icon.png" alt="instagram link"></a></li>
+                <li><a><img src="./imgLib/icons/spotify.png" alt="spotify link"></a></li>
+                <li><a><img src="./imgLib/icons/apple_music.png" alt="apple music link"></a></li>
+            </ul>
+        </nav>
+    </label>
+    <div class="topSpace" id="top"></div>
+    <!-- <div class="borgirOverlay"></div> -->
+    <nav id="navList">
+        <ul>
+            <li><a href="#top">Recents</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="./jsLab.html">JavaScript Lab</a></li>
+        </ul>
+    </nav>
+    <section id="mainContent">
+        <section id="recents">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="./imgLib/silviaS14snow.png"
+                            alt="Nissan Silvia S14 drifting through a snowy hairpin corner.">
+                        <figcaption>Nissan Silvia S14</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgLib/merc2.jpg" alt="Mercedes-Benz SL 65 AMG Black Series">
+                        <figcaption>Mercedes-Benz SL 65 AMG Black Series</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <section id="biography">
+            <h2>Biography</h2>
+            <p>This is the biography section containing hobbies and other
+                potentially interesting things about this human.
+                This page looks terrible but it should have everything that I need for this lab for the moment being.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula egestas quam,
+                et ultricies libero interdum sed. Ut sodales sodales urna eget molestie. Maecenas pellentesque tempor
+                magna, ut efficitur ipsum sodales in. Vivamus eu libero vitae lectus tincidunt maximus eget eget ipsum.
+                In hac habitasse platea dictumst. Proin semper mi sem, ut tincidunt erat rhoncus id. Phasellus ac
+                elementum
+                ex. Duis libero ipsum, facilisis et condimentum at, condimentum eget ante. Suspendisse varius dui a
+                consectetur iaculis. Cras tincidunt eros magna, nec hendrerit lacus iaculis ac. Suspendisse dapibus erat
+                vitae tincidunt ullamcorper. Mauris lacinia leo odio, eget lacinia eros vulputate vel. Proin fermentum,
+                erat non imperdiet efficitur, tortor velit mollis mi, eu vulputate odio mauris et orci. Nam ultrices
+                erat
+                id efficitur ultricies. Donec auctor magna ac dolor condimentum, nec malesuada turpis venenatis. </p>
+            <p>Ut cursus maximus enim, non rutrum erat lacinia nec. Nullam feugiat luctus egestas. Vestibulum faucibus
+                enim
+                eu nisi efficitur, ut posuere enim pretium. Morbi turpis justo, rutrum sit amet libero ut, venenatis
+                ornare lorem.
+                Etiam ut semper augue. Praesent ultrices arcu non est eleifend semper. Nam eu libero vel lacus consequat
+                facilisis
+                nec aliquet ipsum. Sed a eros a elit imperdiet venenatis. Duis auctor dignissim sapien sed tempor.
+                Integer elementum
+                nec nulla ac varius. Sed nisl libero, laoreet eget elementum vehicula, pretium vel tortor. Fusce velit
+                mi, blandit
+                sit amet rutrum eget, volutpat ac ex. Nunc mollis condimentum sapien non aliquet. Vestibulum accumsan
+                vitae
+                ipsum sagittis malesuada. Vestibulum ullamcorper, metus non commodo sodales, metus felis scelerisque
+                massa, nec
+                dapibus turpis leo sit amet nunc.</p>
+            <p>Pellentesque quis tincidunt turpis. Curabitur finibus elit erat, eu sagittis nulla egestas vitae.
+                Curabitur
+                rhoncus eleifend velit et venenatis. Quisque eget lacinia nisl. Praesent elementum condimentum
+                convallis.
+                Pellentesque posuere ac lorem vel hendrerit. In hac habitasse platea dictumst. Nulla congue in nulla
+                ornare
+                gravida.</p>
+            <P>Fusce sit amet urna malesuada, gravida libero eget, commodo turpis. Praesent eu dui elit. Etiam ultrices
+                sed massa ac pellentesque. Donec sapien turpis, vehicula eu ullamcorper iaculis, porttitor a odio. Cras
+                tortor lorem, consequat vitae ex vel, varius fermentum lectus. Nunc efficitur cursus lacus a vestibulum.
+                Fusce sagittis facilisis eros. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis
+                parturient
+                montes, nascetur ridiculus mus. Pellentesque vehicula, orci et ornare pellentesque, libero risus
+                molestie
+                libero, nec ultrices massa lorem eu tellus.</P>
+            <section />
+
+            <h2 id="table">Example Table</h2>
+            <table>
+                <tr>
+                    <th>heading 1</th>
+                    <th>heading 2</th>
+                    <th>heading 3</th>
+                </tr>
+                <tr>
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                </tr>
+                <tr>
+                    <td>data 4</td>
+                    <td>data 5</td>
+                    <td>data 6</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- <iframe width="355" height="200" src="https://www.youtube.com/embed/sSuKUFWf2Dk" title="Bouncing Ball on Jelly. Or water." 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe> -->
+        <!-- <p>Shoot me an email <a href="mailto:jiahao.sun@edu.sait.ca">here</a>.</p> -->
+        
+    <footer>
+        <p>portfolio @saldandpaper</p>
+        <p>saldandpaper <span id="footerYear"></span> (c)</p>
+    </footer>
 </body>
+
 </html>
