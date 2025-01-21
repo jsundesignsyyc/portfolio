@@ -150,7 +150,7 @@ body ul{
 }
 
 footer {
-	border: blue 1px solid;
+	/* border: blue 1px solid; */
     font-size: 10pt;
     font-style: italic;
     margin-top: 50pt;
@@ -158,19 +158,19 @@ footer {
 	padding-bottom: 20pt;
 	background-color: hsl(0, 0%, 0%);
 	font-style: normal;
-
+	display: block;
 	padding: 2rem;
 }
 
 #footer-info {
-	border: 1px red solid;
+	/* border: 1px red solid; */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 
 .footer-section {
-	border: 1px solid lime;
+	/* border: 1px solid lime; */
 	display: flex;
 	flex-direction: column;
 	text-align: left;
@@ -187,7 +187,7 @@ footer {
 }
 
 #footer-note {
-	border: 1px solid yellow;
+	/* border: 1px solid yellow; */
 	text-align: center;
 	padding: 1rem;
 }
