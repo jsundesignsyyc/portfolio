@@ -16,6 +16,7 @@
 /* body styles */
 body {
 	background-color: #1e242e;
+	/* background-color: #181818; */
 	color: #AFC1D6;
 	font-family: "outfit", sans-serif;
 }
@@ -31,19 +32,19 @@ body ul{
 
 .topSpace { 
 	/* height: 50pt;  */
-	height: 46pt;
+	height: 5.5rem;
 } 
 
 /* floating top bar */
 
 .topBar {
-	border-top: #FFFFFF7a solid 1px;
+	border-top: #ffffff77 solid 1px;
 	border-left: #FFFFFF3a solid 1px;
 	border-right: #FFFFFF3a solid 1px;
 	border-bottom: #FFFFFF3a solid 1px;
 	display: block;
 	height: fit-content;
-	width: 84vw;
+	width: 84vw;	
 	min-width: 16rem;
 	font-size: 15pt;
 	position: fixed;
@@ -53,11 +54,11 @@ body ul{
 	right: 0px;
 /* neumorphic fx */
 	box-shadow:  0px 8px 22px #00000060,
-		   inset 0px -8px 22px #2b37459f;
+		   inset 0px -8px 22px #2b37455a;
 	border-radius: 10pt;
 	background-color: rgba(28, 31, 43, 0.5);
 	backdrop-filter: blur(20px);
-	text-shadow: 5px 5px 10px #000000F0;
+	text-shadow: 5px 5px 10px #00000090;
 	z-index: 10;
 }
 
@@ -86,7 +87,7 @@ body ul{
 	text-decoration: none;
 	padding: none;
 	margin: none;
-	font-size:13pt;
+	font-size: 1.3rem;
 }
 .topBarLogo {
 	/* border: red 1px solid; */
@@ -123,7 +124,6 @@ body ul{
 	top: 20vh;
 	width: fit-content;
 	background-color: rgba(49, 59, 68, 0.7);
-	/* background-color: rgba(255, 255, 255, 0.7); */
 	box-shadow:  0px 8px 22px #00000060,
 		   inset 0px -8px 22px #2b37459f;
 	backdrop-filter: blur(20);
@@ -148,19 +148,55 @@ body ul{
 	animation-fill-mode: forwards;
 }
 
+
+#main {
+	/* border: 1px red solid; */
+	width: 84dvw;
+	margin: 2rem auto 2rem auto;
+	min-height: 75dvh;
+	padding: 0px;
+}
+
+
 footer {
-	/* border: red 1px solid; */
+	/* border: blue 1px solid; */
     font-size: 10pt;
     font-style: italic;
     margin-top: 50pt;
     padding-top: 20pt;
 	padding-bottom: 20pt;
 	background-color: hsl(0, 0%, 0%);
-	width: 100%;
-}
-footer p {
-    text-align: center;
-    margin: 0pt;
-    padding: 0pt;
+	font-style: normal;
+	display: block;
+	padding: 2rem;
 }
 
+#footer-info {
+	/* border: 1px red solid; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.footer-section {
+	/* border: 1px solid lime; */
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	padding: 1rem;
+}
+
+.footer-title {
+	font-size: 1.3rem;
+	padding-bottom: 1rem;
+}
+
+.footer-content {
+	font-size: 1rem;
+}
+
+#footer-note {
+	/* border: 1px solid yellow; */
+	text-align: center;
+	padding: 1rem;
+}

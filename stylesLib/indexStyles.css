@@ -4,5 +4,14 @@
 /* style for main content */
 
 
+/* Center the content in the #main or #hero container */
+.container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
 }
 
+#hero {
+    text-align: center;
+    font-size: 2rem;
+}

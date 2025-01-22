@@ -1,0 +1,88 @@
+#design-main-section{
+    /* border: 1px salmon solid; */
+    display: flex;
+    flex-direction: row;
+}
+
+.container-button {
+    position: relative;
+    padding: 1rem;
+    width: 50%;
+    height: 40dvh;
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 1rem;
+    border-top: #ffffff77 solid 1px;
+    border-left: #FFFFFF3a solid 1px;
+    border-right: #FFFFFF3a solid 1px;
+    border-bottom: #FFFFFF3a solid 1px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease; 
+    box-shadow: 0 2pt 1rem #000000fa;
+}
+
+/* Add background image using ::before */
+.container-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); 
+    z-index: 0; 
+    transition: filter 0.3s ease; 
+}
+
+/* Specific background images for each button */
+#design-branding-button::before {
+    background-image: url('../assets/pages-design/design-branding.jpg');
+}
+
+#design-interactive-button::before {
+    background-image: url('../assets/pages-design/design-interactive.jpg');
+}
+
+/* Ensure the text stays above the blurred background */
+.container-button h1 {
+    position: absolute;
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Align text properly */
+    margin: 0;
+    font-size: 1.3rem;
+    z-index: 1; /* Keeps text above the blurred background */
+    transition: top 0.3s ease, transform 0.3s ease; /* Smooth transition for text movement */
+    text-shadow: 0 2pt 5pt #000000fa;
+    box-shadow: 0 2pt 1rem #000000fa;
+    padding: 0.5rem;
+    background-color: #2A343D;
+    border-radius: 0.6rem;
+    border-top: #ffffff77 solid 1px;
+    border-left: #FFFFFF3a solid 1px;
+    border-right: #FFFFFF3a solid 1px;
+    border-bottom: #FFFFFF3a solid 1px;
+    width: 80%;
+    text-align: center;
+}
+
+/* Hover state for the button */
+.container-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Hover state for the background */
+.container-button:hover::before {
+    filter: none; /* Remove the blur on hover */
+}
+
+/* Move text to the top on hover */
+.container-button:hover h1 {
+    top: 10%; /* Move text to the top */
+    transform: translate(-50%, 0); /* Adjust alignment for the top position */
+}
