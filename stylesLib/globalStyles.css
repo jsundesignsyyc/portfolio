@@ -16,6 +16,12 @@
 /* body styles */
 body {
 	background-color: #1e242e;
+	background-image: url("../assets/bkgd-img.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
 	/* background-color: #181818; */
 	color: #AFC1D6;
 	font-family: "outfit", sans-serif;
