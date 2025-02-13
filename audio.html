@@ -48,31 +48,10 @@
     </section>
 
 </body>
-<footer>
-    <section id="footer-info">
-        <section class="footer-section">
-            <section class="footer-title">
-                <h3>Contact</h3>
-            </section>
-            <section class="footer-content">
-                <p>j.sun.designs.yyc@gmail.com</p>
-            </section>
-        </section>
-
-        <section class="footer-section">
-            <section class="footer-title">
-                <h3>Location</h3>
-            </section>
-            <section class="footer-content">
-                <p>Remote, or on-site in</p>
-                <p>Calgary, AB, Canada</p>
-            </section>
-        </section>
-    </section>
-    <section id="footer-note">
-        <p>portfolio</p>
-        <p>J. Sun Designs <span id="footerYear"></span> (c)</p>
-    </section>
-
-</footer>
+<div id="footer"></div>
+<script>
+    fetch("./elements/footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+</script>
 </html>
