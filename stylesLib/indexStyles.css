@@ -1,3 +1,33 @@
+#hero {
+    background-color: black;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;  /* Stack text and button vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text content */
+    color: white;
+}
+
+#hero-text-container {
+    margin: 30px;
+}
+
+#scroll-down {
+    position: absolute;
+    bottom: 30px; /* Adjust spacing */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    
+    & #scroll-down-icon {
+        filter: invert(1);
+        height: 40px;
+    }
+}
+
+
 .projects-container {
     display: block;
     margin: auto auto 2rem auto;
