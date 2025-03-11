@@ -33,7 +33,7 @@
     margin: auto auto 2rem auto;
     width: 450pt; 
     aspect-ratio: 16 / 9;
-    border-radius: 10px;
+    border-radius: 5px;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -42,10 +42,10 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
 
-    border-top: #ffffff77 solid 1px;
+    /* border-top: #ffffff77 solid 1px;
 	border-left: #FFFFFF3a solid 1px;
 	border-right: #FFFFFF3a solid 1px;
-	border-bottom: #FFFFFF3a solid 1px;
+	border-bottom: #FFFFFF3a solid 1px; */
 }
 
 .projects-container a {

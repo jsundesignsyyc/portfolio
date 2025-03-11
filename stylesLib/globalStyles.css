@@ -47,13 +47,13 @@ h1 {
 
 /* navbar */
 
-/* Base navbar styling */
+/* Navbar container */
 .topBar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between; /* Adjust space between left and right items */
     align-items: center;
     height: 50px;
-    padding: 0.4rem;
+    padding: 0.4rem 1rem;
     background-color: rgba(26, 28, 37, 0.9);
     color: var(--light-text-color);
     box-shadow: 0px 3px 20px #00000060;
@@ -63,9 +63,14 @@ h1 {
     left: 0;
     right: 0;
     z-index: 10;
-	font-size: 15px;
 }
 
+/* Flex container for left-side content */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10pt; /* Adds spacing between logo and title */
+}
 /* Hamburger menu styling */
 .hamburger {
     display: none;
