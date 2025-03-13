@@ -8,8 +8,6 @@
 	--light-text-color: #AFC1D6;
 	--dark-text-color: #2b2b2b;
 }
-
-
 /* body styles */
 body {
 	/* background-color: #1e242e; */
@@ -69,7 +67,7 @@ h1 {
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 10pt; /* Adds spacing between logo and title */
+    gap: 20pt; /* Adds spacing between logo and title */
 }
 /* Hamburger menu styling */
 .hamburger {
@@ -79,17 +77,19 @@ h1 {
 }
 
 .hamburger .bar {
-    width: 2rem;
-    height: 2px;
+	/* border: red 1px solid; */
+    width: 0rem;
+    height: 0px;
     background-color: var(--light-text-color);
-    margin: 3px 0;
+    margin: 0px;
 }
 
 /* Navigation Links - Desktop */
 .nav-links {
+	/* border: 1px red solid; */
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 10px;
 }
 
 .nav-links li {

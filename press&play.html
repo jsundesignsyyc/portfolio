@@ -16,34 +16,21 @@
 <body>
     <!-- global elements: floating(topBar, links/socials) -->
     <label>
-        <div class="topBar">
-            <ul>
-                <!-- <li><a href="./design.html">DESIGN</a></li> -->
-                <li class="topBarLogo"><a href="./index.html"><img id="headLogo"
-                            src="./imgLib/logo_white_solid.png"></a></li>
-                <!-- <li><a href="./audio.html">AUDIO</a></li> -->
-                 <li class="topBarSpace"></li>
-                 <li class="topBarSpace"></li>
-                 <li class="topBarSpace"></li>
-                <li>
-                    Press & Play
-                </li>
-            </ul>
-        </div>
-        <nav class="links">
-            <ul>
-                <li><a target="_blank"
-                        href="https://www.instagram.com/todwstam_create/?utm_source=ig_web_button_share_sheet&igshid=YzAwZjE1ZTI0Zg==">
-                        <img src="./imgLib/icons/Instagram_icon.png" alt="instagram link"></a></li>
-                <li><a target="_blank"
-                        href="https://open.spotify.com/artist/1qy9lqIulUNXAwCZ10BjJl?si=6akGPkm3Q3SsE3T_9yIOjA">
-                        <img src="./imgLib/icons/spotify.png" alt="spotify link"></a></li>
-                <li><a target="_blank"
-                        href="https://music.apple.com/ca/artist/todwstam/1307820788" >
-                    <img src="./imgLib/icons/apple_music.png" alt="apple music link"></a></li>
-            </ul>
-        </nav>
+        <div id="navbar"></div>
+        <script>
+            fetch("./elements/navbar.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("navbar").innerHTML = data);
+        </script>
+        <div id="sidebar"></div>
+        <script>
+            fetch("./elements/sidebar.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("sidebar").innerHTML = data);
+        </script>
     </label>
+
+    
     <div class="topSpace" id="top"></div>
 
     <section id="main"">

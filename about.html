@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesLib/reset.css" rel="stylesheet">
+    <link href="./stylesLib/globalStyles.css" rel="stylesheet">
+    <link href="./stylesLib/indexStyles.css" rel="stylesheet">
+    <script defer src="./scriptLib/globalScript.js"></script>
+    <script defer src="./scriptLib/indexScript.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="./imgLib/logo_black_solid.ico" />
+</head>
+<body>
+    <!-- global elements: floating(topBar, links/socials) -->
+    <label>
+        <div id="navbar"></div>
+        <script>
+            fetch("./elements/navbar.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("navbar").innerHTML = data);
+        </script>
+        <div id="sidebar"></div>
+        <script>
+            fetch("./elements/sidebar.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("sidebar").innerHTML = data);
+        </script>
+    </label>
+
+
+    
+    <!-- <div class="topSpace" id="top"></div> -->
+</body>
+<div id="footer"></div>
+<script>
+    fetch("./elements/footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+</html>
