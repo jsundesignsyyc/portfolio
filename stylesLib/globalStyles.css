@@ -11,7 +11,7 @@
 /* body styles */
 body {
 	/* background-color: #1e242e; */
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	/* background-image: url("../assets/bkgd-img.png"); */
 	background-size: cover;
 	background-position: center;
@@ -19,12 +19,13 @@ body {
 	background-attachment: fixed;
 
 	/* background-color: #181818; */
-	color: #AFC1D6;
+	color: var(--dark-text-color);
 	font-family: "outfit", sans-serif;
 }
 
 body a {
-	color: #AFC1D6;
+	color: var(--light-text-color);
+	text-decoration: none;
 }
 body ul{
 	list-style: none;
@@ -35,6 +36,17 @@ h1 {
 	font-weight: bold;
 	margin-bottom: 1rem;
 }
+
+
+main {
+	/* border: 1px red solid; */
+	/* background-color: white; */
+	width: 84dvw;
+	margin: 2rem auto 2rem auto;
+	min-height: 75dvh;
+	padding: 0px;
+}
+
 
 /* head space */
 
@@ -69,89 +81,87 @@ h1 {
     align-items: center;
     gap: 20pt; /* Adds spacing between logo and title */
 }
-/* Hamburger menu styling */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+
+#nav-links {
+	display: flex;
+	gap: 20px;
 }
 
-.hamburger .bar {
-	/* border: red 1px solid; */
-    width: 0rem;
-    height: 0px;
-    background-color: var(--light-text-color);
-    margin: 0px;
+.ham-menu, .off-screen-menu {
+	display: none;
 }
 
-/* Navigation Links - Desktop */
-.nav-links {
-	/* border: 1px red solid; */
-    display: flex;
-    list-style: none;
-    gap: 10px;
-}
-
-.nav-links li {
-    padding: 10px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--light-text-color);
-    font-size: 15px;
-}
-
-/* Hide navigation links on mobile */
 @media screen and (max-width: 768px) {
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        gap: 5px;
-        padding: 10px;
-    }
+	#nav-links {
+		display: none;
+	}
 
-    .hamburger .bar {
-        width: 30px;
-        height: 3px;
-        background-color: var(--light-text-color);
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
+	/* ham menu */
+	.ham-menu {
+		display: flex;
+		height: 2rem;
+		width: 1.5rem;
+		margin-left: auto;
+		position: relative;
+		z-index: 11;
 
-    /* Default state: Hide the menu */
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: rgba(26, 28, 37, 0.9);
-        flex-direction: column;
-        width: 200px;
-        padding: 10px;
-        border-radius: 0 0 10px 10px;
-    }
+		& span {
+			height: 2px;
+			width: 100%;
+			background-color: var(--light-text-color);
+			border-radius: 25px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			transition: .3s ease;
+		}
+	}
+	.ham-menu span:nth-child(1) {
+		top: 25%;
+	}
+	.ham-menu span:nth-child(3) {
+		top: 75%;
+	}
+	.ham-menu.active span:nth-child(1) {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+	.ham-menu.active span:nth-child(2) {
+		opacity: 0;
+	}
+	.ham-menu.active span:nth-child(3) {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
 
-    /* Show menu when .active is toggled */
-    .nav-links.active {
-        display: flex;
-    }
+	.off-screen-menu {
+		background-color:  rgba(34, 37, 49, 0.717);
+		height: 100vh;
+		width: 100vw;
+		position: fixed;
+		top: 0;
+		right: -100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;    
+		justify-content: center;
+		text-align: center;
+		backdrop-filter: blur(20px);
+		/* font-size: 3rem; */
+		transition: .3s ease;
+		z-index: 5;
 
-    /* Hamburger Animation */
-    .hamburger.open .bar:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .hamburger.open .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.open .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
+		& li {
+			margin: 1rem;
+			font-size: 1.5rem;
+		}
+	}
+	.off-screen-menu.active {
+		right: 0;
+	}
+	
 }
-
-
 
 #headLogo {
 	/* height: 25pt; */
@@ -208,26 +218,18 @@ h1 {
 }
 
 
-#main {
-	/* border: 1px red solid; */
-	width: 84dvw;
-	margin: 2rem auto 2rem auto;
-	min-height: 75dvh;
-	padding: 0px;
-}
-
-
 footer {
 	/* border: blue 1px solid; */
     font-size: 10pt;
     font-style: italic;
-    margin-top: 50pt;
+    /* margin-top: 50pt; */
     padding-top: 20pt;
 	padding-bottom: 20pt;
 	background-color: hsl(0, 0%, 0%);
 	font-style: normal;
 	display: block;
 	padding: 2rem;
+	color: var(--light-text-color);
 }
 
 #footer-info {

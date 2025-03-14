@@ -7,7 +7,7 @@
     <link href="./stylesLib/reset.css" rel="stylesheet">
     <link href="./stylesLib/globalStyles.css" rel="stylesheet">
     <link href="./stylesLib/indexStyles.css" rel="stylesheet">
-    <script defer src="./scriptLib/globalScript.js"></script>
+    <!-- <script defer src="./scriptLib/globalScript.js"></script> -->
     <script defer src="./scriptLib/indexScript.js"></script>
     <link rel="shortcut icon" type="image/jpg" href="./imgLib/logo_black_solid.ico" />
 </head>
@@ -27,8 +27,6 @@
                 .then(data => document.getElementById("sidebar").innerHTML = data);
         </script>
     </label>
-
-
     
     <!-- <div class="topSpace" id="top"></div> -->
 
@@ -45,28 +43,30 @@
     </section>
 
 
-
-    <ul id="projects">
-        <div class="topSpace" id="top"></div>
-        <div class="topSpace" id="top"></div>
-
-        
-        <li class="projects-container" style="background-image: url('./assets/projects/brewlab/0-brewlab-cover.png');">
-            <a href="./brewlab.html"></a>
-        </li>
-        
-        <li class="projects-container" style="background-image: url('./assets/projects/crypta/crypta-cover.png');">
-            <a href="./crypta.html"></a>
-        </li>
-
-        <li class="projects-container" style="background-image: url('./assets/projects/crypta-mockup/crypta-mockup-cover.png');">
-            <a href="./crypta-mockup.html"></a>
-        </li>
-        
-        <li class="projects-container" style="background-image: url('./assets/projects/press&play/press&play-cover.jpg');">
-            <a href="./press&play.html"></a>
-        </li>
-    </ul>
+    <main>
+        <ul id="projects">
+            <div class="topSpace" id="top"></div>
+            <div class="topSpace" id="top"></div>
+    
+            
+            <li class="projects-container" style="background-image: url('./assets/projects/brewlab/0-brewlab-cover.png');">
+                <a href="./brewlab.html"></a>
+            </li>
+            
+            <li class="projects-container" style="background-image: url('./assets/projects/crypta/crypta-cover.png');">
+                <a href="./crypta.html"></a>
+            </li>
+    
+            <li class="projects-container" style="background-image: url('./assets/projects/crypta-mockup/crypta-mockup-cover.png');">
+                <a href="./crypta-mockup.html"></a>
+            </li>
+            
+            <li class="projects-container" style="background-image: url('./assets/projects/press&play/press&play-cover.jpg');">
+                <a href="./press&play.html"></a>
+            </li>
+        </ul>
+    </main>
+    
 </body>
 <div id="footer"></div>
 <script>
@@ -74,4 +74,6 @@
         .then(response => response.text())
         .then(data => document.getElementById("footer").innerHTML = data);
 </script>
+
+<script defer src="./scriptLib/globalScript.js"></script>
 </html>

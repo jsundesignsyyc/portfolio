@@ -27,6 +27,9 @@
     }
 }
 
+#projects {
+    margin-bottom: 4rem;
+}
 
 .projects-container {
     display: block;
@@ -41,6 +44,7 @@
                 inset 0px -8px 22px rgba(43, 55, 69, 0.35);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    /* z-index: 1; */
 
     /* border-top: #ffffff77 solid 1px;
 	border-left: #FFFFFF3a solid 1px;
