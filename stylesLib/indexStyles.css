@@ -1,9 +1,42 @@
+#hero {
+    background-color: black;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;  /* Stack text and button vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text content */
+    color: white;
+}
+
+#hero-text-container {
+    margin: 30px;
+}
+
+#scroll-down {
+    position: absolute;
+    bottom: 30px; /* Adjust spacing */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    
+    & #scroll-down-icon {
+        filter: invert(1);
+        height: 40px;
+    }
+}
+
+#projects {
+    margin-bottom: 4rem;
+}
+
 .projects-container {
     display: block;
     margin: auto auto 2rem auto;
     width: 450pt; 
     aspect-ratio: 16 / 9;
-    border-radius: 10px;
+    border-radius: 5px;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -11,11 +44,12 @@
                 inset 0px -8px 22px rgba(43, 55, 69, 0.35);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    /* z-index: 1; */
 
-    border-top: #ffffff77 solid 1px;
+    /* border-top: #ffffff77 solid 1px;
 	border-left: #FFFFFF3a solid 1px;
 	border-right: #FFFFFF3a solid 1px;
-	border-bottom: #FFFFFF3a solid 1px;
+	border-bottom: #FFFFFF3a solid 1px; */
 }
 
 .projects-container a {

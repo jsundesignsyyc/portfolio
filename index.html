@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Portfolio J.Sun.Designs</title>
     <meta charset="UTF-8">
@@ -8,64 +7,66 @@
     <link href="./stylesLib/reset.css" rel="stylesheet">
     <link href="./stylesLib/globalStyles.css" rel="stylesheet">
     <link href="./stylesLib/indexStyles.css" rel="stylesheet">
-    <script defer src="./scriptLib/globalScript.js"></script>
+    <!-- <script defer src="./scriptLib/globalScript.js"></script> -->
+    <script defer src="./scriptLib/indexScript.js"></script>
     <link rel="shortcut icon" type="image/jpg" href="./imgLib/logo_black_solid.ico" />
 </head>
-
 <body>
     <!-- global elements: floating(topBar, links/socials) -->
     <label>
-        <div class="topBar">
-            <ul>
-                <!-- <li><a href="./design.html">DESIGN</a></li> -->
-                <li class="topBarLogo"><a href="./index.html"><img id="headLogo"
-                            src="./imgLib/logo_white_solid.png"></a></li>
-                <!-- <li><a href="./audio.html">AUDIO</a></li> -->
-                 <li class="topBarSpace"></li>
-                 <li class="topBarSpace"></li>
-                 <li class="topBarSpace"></li>
-                <li>
-                    Portfolio J.Sun.Designs
-                </li>
-            </ul>
-        </div>
-        <nav class="links">
-            <ul>
-                <li><a target="_blank"
-                        href="https://www.instagram.com/todwstam_create/?utm_source=ig_web_button_share_sheet&igshid=YzAwZjE1ZTI0Zg==">
-                        <img src="./imgLib/icons/Instagram_icon.png" alt="instagram link"></a></li>
-                <li><a target="_blank"
-                        href="https://open.spotify.com/artist/1qy9lqIulUNXAwCZ10BjJl?si=6akGPkm3Q3SsE3T_9yIOjA">
-                        <img src="./imgLib/icons/spotify.png" alt="spotify link"></a></li>
-                <li><a target="_blank"
-                        href="https://music.apple.com/ca/artist/todwstam/1307820788" >
-                    <img src="./imgLib/icons/apple_music.png" alt="apple music link"></a></li>
-            </ul>
-        </nav>
+        <div id="navbar"></div>
+        <script>
+            fetch("./elements/navbar.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("navbar").innerHTML = data);
+        </script>
+        <div id="sidebar"></div>
+        <script>
+            fetch("./elements/sidebar.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("sidebar").innerHTML = data);
+        </script>
     </label>
-    <div class="topSpace" id="top"></div>
+    
+    <!-- <div class="topSpace" id="top"></div> -->
 
-    <section id="main"">
+    <section id="hero">
+        <div id="hero-text-container">
+            <h1>Design, less frustrations.</h1>
+        <a class="link-button" href="./about.html">About me</a>
+        </div>
 
-        <section class="projects-container" style="background-image: url('./assets/projects/brewlab/0-brewlab-cover.png');">
-            <a href="./brewlab.html"></a>
-        </section>
-        
-        <section class="projects-container" style="background-image: url('./assets/projects/crypta/crypta-cover.png');">
-            <a href="./crypta.html"></a>
-        </section>
 
-        <section class="projects-container" style="background-image: url('./assets/projects/crypta-mockup/crypta-mockup-cover.png');">
-            <a href="./crypta-mockup.html"></a>
-        </section>
-        
-        <section class="projects-container" style="background-image: url('./assets/projects/press&play/press&play-cover.jpg');">
-            <a href="./press&play.html"></a>
-        </section>
-        
+        <div id="scroll-down">
+            <img id="scroll-down-icon" src="./assets/icons/arrow-down.svg" alt="Scroll Down">
+        </div>
+    </section>
 
-        </section>
 
+    <main>
+        <ul id="projects">
+            <div class="topSpace" id="top"></div>
+            <div class="topSpace" id="top"></div>
+    
+            
+            <li class="projects-container" style="background-image: url('./assets/projects/brewlab/0-brewlab-cover.png');">
+                <a href="./brewlab.html"></a>
+            </li>
+            
+            <li class="projects-container" style="background-image: url('./assets/projects/crypta/crypta-cover.png');">
+                <a href="./crypta.html"></a>
+            </li>
+    
+            <li class="projects-container" style="background-image: url('./assets/projects/crypta-mockup/crypta-mockup-cover.png');">
+                <a href="./crypta-mockup.html"></a>
+            </li>
+            
+            <li class="projects-container" style="background-image: url('./assets/projects/press&play/press&play-cover.jpg');">
+                <a href="./press&play.html"></a>
+            </li>
+        </ul>
+    </main>
+    
 </body>
 <div id="footer"></div>
 <script>
@@ -73,4 +74,6 @@
         .then(response => response.text())
         .then(data => document.getElementById("footer").innerHTML = data);
 </script>
+
+<script defer src="./scriptLib/globalScript.js"></script>
 </html>
