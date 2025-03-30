@@ -53,6 +53,7 @@ main {
     }
 
     .content-right {
+        /* border: lime 1px solid; */
         width: 100%;
         height: fit-content;
     }
